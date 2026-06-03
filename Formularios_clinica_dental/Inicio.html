@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Clínica Dental La Casa del Ratón Pérez</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333333;
+    }
+
+  header {
+      background-color: #2964bd;
+      padding: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    header h2 {
+      margin: 10px 0 0 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      width: 100%;
+      background: #00bcd4;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    nav ul li a { 
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: color 0.3s ease; 
+    }
+
+    nav ul li a:hover {
+      color: #004a7c; 
+    }
+    article {
+      padding: 40px;
+      width: 90%;          
+      max-width: 1100px;     
+      margin: 40px auto;    
+      background-color: white; 
+      min-height: 300px;
+      border-radius: 16px; 
+      box-shadow: 0 10px 30px rgba(0, 74, 124, 0.06);     }
+
+    .texto-bienvenida {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #f9fbfd; 
+      border-radius: 12px;
+      border: 1px solid #e1e9f0;
+    }
+
+    article h2 {
+      color: #004a7c;
+      font-size: 2rem;
+      margin-top: 0; 
+      border-bottom: 3px solid #00bcd4; 
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    article h3 {
+      color: #008196;
+      font-size: 1.4rem;
+      margin-top: 35px;
+    }
+
+    article ul {
+      padding-left: 0;
+      list-style-type: none; 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    article ul li {
+      background-color: #f4f9fc;
+      color: #004a7c;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      border-left: 4px solid #00bcd4;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .contacto-rapido {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #f9fbfd; 
+      border-radius: 12px;
+      border: 1px solid #e1e9f0;
+    }
+
+    .contacto-rapido h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .contacto-rapido p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 20px;
+      text-align: center;
+      color: white; 
+      margin-top: 20px;
+     }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      article {
+        width: 95%; 
+        padding: 45px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="raton.png" alt="logo del raton perez" width="250">
+  <h1>Clínica Dental La Casa del Ratón Pérez</h2>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="inicio.html">INICIO</a></li> 
+    <li><a href="Paciente.html">PACIENTES</a></li> 
+    <li><a href="Historial_clinico.html">HISTORIAL CLINICO</a></li> 
+    <li><a href="Dentistas.html">DENTISTAS</a></li> 
+    <li><a href="Consultorio.html">CONSULTORIO</a></li> 
+  </ul>
+</nav>
+
+<section>
+  <article>
+    <div class="texto-bienvenida">
+    <h2>Bienvenidos</h2>
+    <p>En <strong>La Casa del Ratón Pérez</strong>, combinamos la ciencia dental más avanzada con un trato humano excepcional. Somos especialistas en transformar sonrisas mediante tecnología digital, desde escaneo intraoral hasta implantes de carga inmediata.</p>
+    <p>Nuestro compromiso es ofrecer diagnósticos precisos y tratamientos mínimamente invasivos en un entorno diseñado para tu máximo confort.</p>
+    </div>
+    <h3>Nuestras Especialidades</h3>
+    <ul>
+      <li>Endodoncia</li>
+      <li>Periodoncia</li>
+      <li>Implantología</li>
+      <li>Ortodoncia</li>
+    </ul>
+
+<section>
+  <article style="display: flex; align-items: center; gap: 30px; max-width: 1000px; margin: 0 auto; padding: 20px;">
+    
+    <div class="texto-contacto" style="flex: 1;">
+      <h3 style="margin-top: 0;">Horarios y Ubicación</h3>
+      <p><strong>Dirección:</strong> Av. de la Sonrisa Alegre #123, Col. Centro</p>
+      <p><strong>Teléfono:</strong> (55) 1234-5678</p>
+      <p><strong>Horario:</strong> Lunes a Viernes de 9:00 AM a 7:00 PM | Sábados de 9:00 AM a 2:00 PM</p>
+    </div>
+
+    <img src="local.png" alt="local de la clinica del raton perez" style="max-width: 400px; width: 100%; height: auto; display: block; border-radius: 18px;">
+
+  </article>
+</section>
+
+<footer>
+  <p>MADRID DE LA CRUZ VALERIA DAYNA   4°J   No.2408951   Programación</p>
+</footer>
+
+</body>
+</html>
+
